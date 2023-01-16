@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ed Whately-Smith | Actor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('1.jpg');
+  min-height: 100%;
+}
+div.preload-images {
+  background:url("1.jpg"),url("2.jpg"),url("3.jpg"),url("4.jpg"),url("5.jpg");
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+</style>
+</head>
+<body onload="startTimer()">
+
+<div class="preload-images"></div>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg" id="img"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon) 
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav> -->
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar 
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  -->
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:48px 32px" id="home">
+    <div class="w3-content" style="max-width:460px;position:relative;" style="padding:32px">
+    <img class="mySlides w3-animate-opacity" onclick="" src="logohw.png" style="width:100%">
+    </div>
+    <p>Actor</p>
+  </header>
+
+  <img id="hdshts" src="edwsdenim.jpg" class="w3-image w3-hide-large w3-round center-fit" style="display:block;height:400px;margin:auto;object-fit:cover;padding-bottom:32px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-center" style="padding:8px 32px">
+    <div class="w3-content w3-justify w3-text-grey" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p>Ed is a London-based actor with an MA in acting from East 15. He appeared in a number of notable productions throughout his course, including playing Slim in Sam Shepard's "Cowboy Mouth" and Gayev in "The Cherry Orchard." Ed also devised and performed in the sell-out comedy piece "SW1A 1AA" at the Clapham Fringe festival.<br><br>Before pursuing a career in acting, Ed worked as a software developer and earned a master's degree in mechanical engineering. In addition to his acting training and experience, he has a number of skills and specialties, including singing, voice over, various sports, and a good ear for accents. He is always seeking new and challenging roles and is excited to continue building a successful career in the acting industry.
+      </p>
+    
+    
+   <!-- End About Section -->
+    </div>
+  
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-justify w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-sun-o fa-fw w3-xxlarge w3-margin-right" style="vertical-align:middle"></i><a href="https://www.spotlight.com/7655-7834-4974" target="_blank" class="w3-hover-text-green">Spotlight</a></p>
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="vertical-align:middle"></i>London, UK</p>
+      </div>
+
+      <div class="w3-section w3-center w3-padding-32">
+        <h2>Thanks!</h2>
+      </div>
+      
+    <!-- End Contact Section -->
+    </div>  
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://www.instagram.com/ed.ws/" target="_blank">
+    <i class="fa fa-instagram w3-hover-opacity" on=""></i></a>
+    <p class="w3-medium">Headshots masterfully taken by the good folks over at YellowBelly Photos.<br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+var x = 0;
+var images = [];
+var time = 7000;
+
+images[0] = "url(1.jpg)";
+images[1] = "url(2.jpg)";
+images[2] = "url(3.jpg)";
+images[3] = "url(4.jpg)";
+images[4] = "url(5.jpg)";
+
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function displayNextImage() {
+  x = (x === images.length - 1) ? 0 : x + 1;
+  document.body.style.animation = "myfirst 5s";
+  document.getElementById("img").style.backgroundImage = images[x];
+  document.getElementById("hdshts").src = x + 1 + ".jpg";
+}
+
+function displayPreviousImage() {
+  x = (x <= 0) ? images.length - 1 : x - 1;
+  document.getElementById("img").style.backgroundImage = images[x];
+}
+
+function startTimer() {
+  setInterval(displayNextImage, 3000);
+}
+</script>
+
+</body>
+</html>
