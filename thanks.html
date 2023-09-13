@@ -1,3 +1,476 @@
+<html><head>
+<title>Ed Whately-Smith | Actor and Voice Actor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  position:relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('1.jpg');
+  min-height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.bgimg .overlay{
+  width:100%;
+  height:100%;
+  background-color:#ffffff;
+  position:absolute;
+  z-index:-1;
+  transform:scaleX(0);
+  transform-origin:100% 50%;
+}
+
+div.preload-images {
+  background:url("1.jpg"),url("2.jpg"),url("3.jpg"),url("4.jpg"),url("5.jpg");
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.left {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.w3-container .reelui {
+   float: right;
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   z-index: 1000;
+   padding: 5px;
+}
+
+.btn {
+  border: 0;
+  background: white;
+  opacity: 0.4;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background:white;
+  outline: none;
+  opacity: 0.4;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  overflow: hidden;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 3px;
+  background: gray;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 3px;
+  background: gray;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bgmargin{
+  margin: 0 0 0 40%;
+}
+
+.bgmargin .open {
+  margin: 0;
+}
+
+.dur1 {
+  transition-duration: 400ms;
+}
+
+</style>
+<style id="__web-inspector-hide-shortcut-style__">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head>
+<body onload="startTimer()" onscroll="scrollCheck()" style="animation: 5s ease 0s 1 normal none running myfirst;">
+
+<div class="preload-images"></div>
+
+<!-- Sidebar with image -->
+<div id="bg" class="w3-sidebar w3-hide-medium w3-hide-small" style="width: 40%; display: block;">
+  <div class="bgimg" id="img" style="background-image: url(&quot;1.jpg&quot;);">
+    <div class="overlay" id="imgoverlay"></div>
+</div>
+</div>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon) 
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav> -->
+
+<!-- Page Content -->
+<div id="maincont" class="w3-main w3-padding-large bgmargin">
+
+  <!-- Menu icon to open sidebar 
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  -->
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:48px 32px" id="home">
+    <div class="w3-content" style="max-width:460px;position:relative;">
+    <img class="mySlides w3-animate-opacity" onclick="" src="logohw.png" style="width:100%">
+    </div>
+    <p>Actor and Voice Actor</p>
+  </header>
+
+  <img id="hdshts" src="1.jpg" class="w3-image w3-hide-large w3-round center-fit" style="display:block;height:400px;margin:auto;object-fit:cover;padding-bottom:32px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-center" style="padding:8px 32px">
+    <div class="w3-content w3-justify w3-text-grey" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p>Ed is a London-based actor with an MA in acting from East 15 Acting School. Throughout his time on the course, he had the opportunity to perform a wide range of roles including Slim in Sam Shepard’s “Cowboy Mouth”, Gayev in “The Cherry Orchard”, and Thomas Mowbray in “Richard II”. Since graduating, he has devised and performed in the sell-out comedy ensemble piece “SW1A 1AA” at the Clapham Fringe Festival and played the role of Capulet in Troubadour Stageworks adaptation of Romeo &amp; Juliet.<br><br>Before pursuing a career in acting, Ed worked as a software developer and also earned a master’s degree in mechanical engineering from The University of Sheffield. While there, he joined the filmmaking society, creating a spark for acting that has only grown throughout his training. In addition to his acting experience, he has also had training in singing, voice work (for which he has a good ear for accents), and a variety of different sports. In between roles, he has continued his training, frequently attending workshops and programmes to further hone his skills. He is always seeking new and challenging roles and is excited to continue growing as a performer and building a successful career in the acting industry.</p>
+    
+      <!-- div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="vertical-align:middle"></i>London, UK</p>
+      </div>
+    
+   <!-- End About Section -->
+    </div>
+  </div>
+  
+  <!-- Showreel -->
+  <div class="w3-container w3-center" style="padding:8px 32px">
+    <div class="w3-content w3-justify w3-text-grey" id="about">
+      <h2>Showreel</h2>
+	<hr class="w3-opacity">
+	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/803184588?h=f7f1b5e430&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="realreel" data-ready="true"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <br>
+	<br>
+	</div>
+  <!-- End Showreel -->
+  </div>
+  
+   <!-- Voice Reels -->
+   <div class="w3-container w3-center" style="padding:8px 32px">
+	<div class="w3-content w3-justify w3-text-grey" id="about">
+		<h2>Voice Reels</h2>
+		<hr class="w3-opacity">
+		
+		<div class="w3-row-padding w3-stretch">
+		
+		
+		<div class="w3-col l6 m6">
+		  <div class="w3-display-container">
+			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Commercial</div>
+			<img src="image1-ads.png" alt="Commercial" style="width:100%;border-radius:5px">
+		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerCom">
+		    </div>
+		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
+			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(1)">
+			    <i id="ppbuttCom" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+			  </button>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="w3-col l6 m6">
+		  <div class="w3-display-container">
+			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Character/Accents</div>
+			<img src="image1-chars.png" alt="Character/Accents" style="width:100%;border-radius:5px">
+		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerCha">
+		    </div>
+		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
+			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(2)">
+			    <i id="ppbuttCha" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+			  </button>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="w3-col l6 m6">
+		  <div class="w3-display-container">
+			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Narration</div>
+			<img src="image1-narr.png" alt="Narration" style="width:100%;border-radius:5px">
+		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerNar">
+		    </div>
+		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
+			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(3)">
+			    <i id="ppbuttNar" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+			  </button>
+		    </div>
+		  </div>
+		</div>
+		
+		
+		<div class="w3-col l6 m6">
+		  <div class="w3-display-container">
+			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Documentary</div>
+			<img src="image1-doc.png" alt="Documentary" style="width:100%;border-radius:5px">
+		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerDoc">
+		    </div>
+		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
+			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(4)">
+			    <i id="ppbuttDoc" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+			  </button>
+		    </div>
+		  </div>
+		</div>
+
+    </div>
+  <!-- End Voice Reels -->
+  </div>
+  
+  <!-- Where to see him Section -->
+  <div class="w3-container w3-center" style="padding:8px 32px">
+    <div class="w3-content w3-justify w3-text-grey" id="tickets">
+      <h2>Upcoming Projects</h2>
+      <hr class="w3-opacity">
+      <p>Ed is currently working on the short film Roadside Funeral, which will be out later this year.</p>
+    
+    
+   <!-- End About Section -->
+    </div>
+
+        <!-- Contact Section -->
+    <div class="w3-padding-32 w3-justify w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-sun-o fa-fw w3-xxlarge w3-margin-right" style="vertical-align:middle"></i><a href="https://www.spotlight.com/7655-7834-4974" target="_blank" class="w3-hover-text-green">Spotlight</a>
+		</p>
+      </div>
+
+      <div class="w3-section w3-center w3-padding-32">
+        <h2>Thanks!</h2>
+      </div>
+    <!-- End Contact Section -->
+    </div>  
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://www.instagram.com/ed.ws/" target="_blank">
+    <i class="fa fa-instagram w3-hover-opacity" on=""></i></a>
+    <p class="w3-medium">Headshots masterfully taken by the good folks over at YellowBelly Photos.<br><br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+var x = 0;
+var images = [];
+var time = 7000;
+
+images[0] = "url(1.jpg)";
+images[1] = "url(2.jpg)";
+images[2] = "url(3.jpg)";
+images[3] = "url(4.jpg)";
+images[4] = "url(5.jpg)";
+
+var playingNar = false;
+var playingCom = false;
+var playingDoc = false;
+var playingCha = false;
+
+var audioNar = new Audio('Ed Whately-Smith Narration.mp3');
+var audioCom = new Audio('Commercials.mp3');
+var audioDoc = new Audio('ed-whately-doco.mp3');
+var audioCha = new Audio('Ed Whately-Smith Character.mp3');
+
+const seekerCom = document.querySelector('#seekerCom');
+const seekerCha = document.querySelector('#seekerCha');
+const seekerNar = document.querySelector('#seekerNar');
+const seekerDoc = document.querySelector('#seekerDoc');
+
+audioCom.addEventListener('timeupdate', () => {
+  const percentCom = audioCom.currentTime / audioCom.duration * 100;
+  seekerCom.value = percentCom;
+});
+// Allow seeking
+seekerCom.addEventListener('input', (e) => {
+  audioCom.currentTime = e.target.value / 100 * audioCom.duration;
+});
+
+
+audioCha.addEventListener('timeupdate', () => {
+  const percentCha = audioCha.currentTime / audioCha.duration * 100;
+  seekerCha.value = percentCha;
+});
+// Allow seeking
+seekerCha.addEventListener('input', (e) => {
+  audioCha.currentTime = e.target.value / 100 * audioCha.duration;
+});
+
+
+audioNar.addEventListener('timeupdate', () => {
+  const percentNar = audioNar.currentTime / audioNar.duration * 100;
+  seekerNar.value = percentNar;
+});
+// Allow seeking
+seekerNar.addEventListener('input', (e) => {
+  audioNar.currentTime = e.target.value / 100 * audioNar.duration;
+});
+
+
+audioDoc.addEventListener('timeupdate', () => {
+  const percentDoc = audioDoc.currentTime / audioDoc.duration * 100;
+  seekerDoc.value = percentDoc;
+});
+// Allow seeking
+seekerDoc.addEventListener('input', (e) => {
+  audioDoc.currentTime = e.target.value / 100 * audioDoc.duration;
+});
+
+function playPause(id) {
+  if (id == 1) {
+	  if (playingCom) {
+		document.getElementById("ppbuttCom").classList.remove('fa-pause');
+		document.getElementById("ppbuttCom").classList.add('fa-play');
+		document.getElementById("ppbuttCom").style.paddingLeft = "2px";
+		audioCom.pause();
+		playingCom = false;
+	  } else {
+		document.getElementById("ppbuttCom").classList.remove('fa-play');
+		document.getElementById("ppbuttCom").classList.add('fa-pause');
+		document.getElementById("ppbuttCom").style.paddingLeft = "0px";
+		audioCom.play();
+		playingCom = true;
+	  }
+    } else if (id == 2) {
+	  if (playingCha) {
+		document.getElementById("ppbuttCha").classList.remove('fa-pause');
+		document.getElementById("ppbuttCha").classList.add('fa-play');
+		document.getElementById("ppbuttCha").style.paddingLeft = "2px";
+		audioCha.pause();
+		playingCha = false;
+	  } else {
+		document.getElementById("ppbuttCha").classList.remove('fa-play');
+		document.getElementById("ppbuttCha").classList.add('fa-pause');
+		document.getElementById("ppbuttCha").style.paddingLeft = "0px";
+		audioCha.play();
+		playingCha = true;
+	  }
+	} else if (id == 3) {
+	  if (playingNar) {
+		document.getElementById("ppbuttNar").classList.remove('fa-pause');
+		document.getElementById("ppbuttNar").classList.add('fa-play');
+		document.getElementById("ppbuttNar").style.paddingLeft = "2px";
+		audioNar.pause();
+		playingNar = false;
+	  } else {
+		document.getElementById("ppbuttNar").classList.remove('fa-play');
+		document.getElementById("ppbuttNar").classList.add('fa-pause');
+		document.getElementById("ppbuttNar").style.paddingLeft = "0px";
+		audioNar.play();
+		playingNar = true;
+	  }
+	} else if (id == 4) {
+	  if (playingDoc) {
+		document.getElementById("ppbuttDoc").classList.remove('fa-pause');
+		document.getElementById("ppbuttDoc").classList.add('fa-play');
+		document.getElementById("ppbuttDoc").style.paddingLeft = "2px";
+		audioDoc.pause();
+		playingDoc = false;
+	  } else {
+		document.getElementById("ppbuttDoc").classList.remove('fa-play');
+		document.getElementById("ppbuttDoc").classList.add('fa-pause');
+		document.getElementById("ppbuttDoc").style.paddingLeft = "0px";
+		audioDoc.play();
+		playingDoc = true;
+	  }
+	}
+}
+
+function scrollCheck() {
+
+  if(window.scrollY<250){
+    openBG(); //user scrolled to the top of the page
+  } else {
+	closeBG();
+  }
+}
+
+// Open and close sidebar
+function openBG() {
+  document.getElementById("maincont").classList.remove('bgmargin.open');
+  document.getElementById("maincont").classList.add('bgmargin');
+  document.getElementById("bg").classList.add('dur1');
+  document.getElementById("bg").style.transform = "translateX(0%)";
+  //document.getElementById("imgoverlay").style.transform = "scaleX(0)";
+}
+
+function closeBG() {
+  document.getElementById("maincont").classList.remove('bgmargin');
+  document.getElementById("maincont").classList.add('bgmargin.open');
+  document.getElementById("bg").style.transform = "translateX(-100%)";
+  // document.getElementById("bg").style.display = "none";
+  //document.getElementById("imgoverlay").style.transform = "scaleX(1)";
+}
+
+function displayNextImage() {
+  x = (x === images.length - 1) ? 0 : x + 1;
+  document.body.style.animation = "myfirst 5s";
+  document.getElementById("img").style.backgroundImage = images[x];
+  document.getElementById("hdshts").src = x + 1 + ".jpg";
+}
+
+function displayPreviousImage() {
+  x = (x <= 0) ? images.length - 1 : x - 1;
+  document.getElementById("img").style.backgroundImage = images[x];
+}
+
+function startTimer() {
+  setInterval(displayNextImage, 3000);
+}
+</script>
+
+
+</body></html>
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html>
