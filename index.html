@@ -185,13 +185,9 @@ div.preload-images {
       <hr class="w3-opacity">
       <p>Ed is a London-based actor with an MA in acting from East 15 Acting School. Throughout his time on the course, he had the opportunity to perform a wide range of roles including Slim in Sam Shepard’s “Cowboy Mouth”, Gayev in “The Cherry Orchard”, and Thomas Mowbray in “Richard II”. Since graduating, he has devised and performed in the sell-out comedy ensemble piece “SW1A 1AA” at the Clapham Fringe Festival and played the role of Capulet in Troubadour Stageworks adaptation of Romeo &amp; Juliet.<br><br>Before pursuing a career in acting, Ed worked as a software developer and also earned a master’s degree in mechanical engineering from The University of Sheffield. While there, he joined the filmmaking society, creating a spark for acting that has only grown throughout his training. In addition to his acting experience, he has also had training in singing, voice work (for which he has a good ear for accents), and a variety of different sports. In between roles, he has continued his training, frequently attending workshops and programmes to further hone his skills. He is always seeking new and challenging roles and is excited to continue growing as a performer and building a successful career in the acting industry.</p>
     
-      <!-- div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="vertical-align:middle"></i>London, UK</p>
-      </div>
-    
-   <!-- End About Section -->
     </div>
   </div>
+   <!-- End About Section -->
   
   <!-- Showreel -->
   <div class="w3-container w3-center" style="padding:8px 32px">
@@ -200,82 +196,83 @@ div.preload-images {
 	<hr class="w3-opacity">
 	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/803184588?h=f7f1b5e430&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="realreel" data-ready="true"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 	</div>
-  <!-- End Showreel -->
   </div>
+  <!-- End Showreel -->
   
    <!-- Voice Reels -->
    <div class="w3-container w3-center" style="padding:8px 32px">
-	<div class="w3-content w3-justify w3-text-grey" id="about">
-		<h2>Voice Reels</h2>
-		<hr class="w3-opacity">
+		<div class="w3-content w3-justify w3-text-grey" id="about">
+			<h2>Voice Reels</h2>
+			<hr class="w3-opacity">
+			
+			<div class="w3-row-padding w3-stretch">
+			
+			
+			<div class="w3-col l6 m6">
+			<div class="w3-display-container voimage">
+				<img src="image1-ads.png" alt="Commercial" style="width:100%;border-radius:5px">
+				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Commercial</div>
+				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<input type="range" min="0" max="100" value="0" class="slider" id="seekerCom">
+				</div>
+				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
+				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(1)">
+					<i id="ppbuttCom" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+				</button>
+				</div>
+			</div>
+			</div>
+			
+			<div class="w3-col l6 m6">
+			<div class="w3-display-container voimage">
+				<img src="image1-chars.png" alt="Character/Accents" style="width:100%;border-radius:5px">
+				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Character/Accents</div>
+				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<input type="range" min="0" max="100" value="0" class="slider" id="seekerCha">
+				</div>
+				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
+				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(2)">
+					<i id="ppbuttCha" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+				</button>
+				</div>
+			</div>
+			</div>
+			
+			<div class="w3-col l6 m6">
+			<div class="w3-display-container voimage">
+				<img src="image1-narr.png" alt="Narration" style="width:100%;border-radius:5px">
+				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Narration</div>
+				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<input type="range" min="0" max="100" value="0" class="slider" id="seekerNar">
+				</div>
+				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
+				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(3)">
+					<i id="ppbuttNar" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+				</button>
+				</div>
+			</div>
+			</div>
+			
+			
+			<div class="w3-col l6 m6">
+			<div class="w3-display-container voimage">
+				<img src="image1-doc.png" alt="Documentary" style="width:100%;border-radius:5px">
+				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Documentary</div>
+				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<input type="range" min="0" max="100" value="0" class="slider" id="seekerDoc">
+				</div>
+				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
+				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(4)">
+					<i id="ppbuttDoc" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
+				</button>
+				</div>
+			</div>
+			</div>
 		
-		<div class="w3-row-padding w3-stretch">
-		
-		
-		<div class="w3-col l6 m6">
-		  <div class="w3-display-container voimage">
-			<img src="image1-ads.png" alt="Commercial" style="width:100%;border-radius:5px">
-			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Commercial</div>
-		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
-			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerCom">
-		    </div>
-		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
-			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(1)">
-			    <i id="ppbuttCom" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-			  </button>
-		    </div>
-		  </div>
 		</div>
-		
-		<div class="w3-col l6 m6">
-		  <div class="w3-display-container voimage">
-			<img src="image1-chars.png" alt="Character/Accents" style="width:100%;border-radius:5px">
-			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Character/Accents</div>
-		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
-			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerCha">
-		    </div>
-		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
-			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(2)">
-			    <i id="ppbuttCha" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-			  </button>
-		    </div>
-		  </div>
-		</div>
-		
-		<div class="w3-col l6 m6">
-		  <div class="w3-display-container voimage">
-			<img src="image1-narr.png" alt="Narration" style="width:100%;border-radius:5px">
-			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Narration</div>
-		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
-			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerNar">
-		    </div>
-		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
-			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(3)">
-			    <i id="ppbuttNar" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-			  </button>
-		    </div>
-		  </div>
-		</div>
-		
-		
-		<div class="w3-col l6 m6">
-		  <div class="w3-display-container voimage">
-			<img src="image1-doc.png" alt="Documentary" style="width:100%;border-radius:5px">
-			<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Documentary</div>
-		    <div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
-			  <input type="range" min="0" max="100" value="0" class="slider" id="seekerDoc">
-		    </div>
-		    <div class="reelui" style="padding-bottom:6%;padding-right:3%">
-			  <button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(4)">
-			    <i id="ppbuttDoc" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-			  </button>
-		    </div>
-		  </div>
-		</div>
-
-    </div>
-  <!-- End Voice Reels -->
+	</div>
   </div>
+  <!-- End Voice Reels -->
   
   <!-- Where to see him Section -->
   <div class="w3-container w3-center" style="padding:8px 32px">
