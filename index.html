@@ -65,17 +65,23 @@ div.preload-images {
   padding: 10px;
 }
 
+.lilbox {
+  background-color:#00000088;
+  color:white
+}
+
 .w3-container .reelui {
    float: right;
    position: absolute;
    right: 0px;
    bottom: 0px;
    z-index: 1000;
-   padding: 5px;
+   padding-bottom:26px;
 }
 
 .voimage {
   transition-duration:100ms;
+  cursor: pointer;
 }
 
 .voimage:hover {
@@ -93,30 +99,32 @@ div.preload-images {
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 3px;
+  height: 10px;
   background:#524d4977;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
   overflow: hidden;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 3px;
-  background: #298affdd;
-  opacity: 1;
+  width: 30px;
+  height: 10px;
+  background: white;
+  opacity: 0.9;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 15px;
-  height: 3px;
-  background: #298affdd;
-  opacity: 1;
+  width: 30px;
+  height: 10px;
+  background: white;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -210,45 +218,37 @@ div.preload-images {
 			
 			<div class="w3-col l6 m6">
 			<div class="w3-display-container voimage">
-				<img src="image1-ads.png" alt="Commercial" style="width:100%;border-radius:5px">
-				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Commercial</div>
-				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<img src="image1-ads.png" alt="Commercial" style="width:100%;border-radius:5px" onclick="playPause(1)">
+				<div class="w3-display-topleft w3-padding lilbox" style="border-radius:5px" onclick="playPause(1)">Commercial</div>
+				<div class="reelui" style="width:100%;height:10px">
 				<input type="range" min="0" max="100" value="0" class="slider" id="seekerCom">
 				</div>
 				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
-				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(1)">
-					<i id="ppbuttCom" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-				</button>
+
 				</div>
 			</div>
 			</div>
 			
 			<div class="w3-col l6 m6">
 			<div class="w3-display-container voimage">
-				<img src="image1-chars.png" alt="Character/Accents" style="width:100%;border-radius:5px">
-				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Character/Accents</div>
-				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<img src="image1-chars.png" alt="Character/Accents" style="width:100%;border-radius:5px" onclick="playPause(2)">
+				<div class="w3-display-topleft w3-padding lilbox" style="border-radius:5px" onclick="playPause(2)">Character/Accents</div>
+				<div class="reelui" style="width:100%;height:10px">
 				<input type="range" min="0" max="100" value="0" class="slider" id="seekerCha">
 				</div>
 				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
-				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(2)">
-					<i id="ppbuttCha" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-				</button>
 				</div>
 			</div>
 			</div>
 			
 			<div class="w3-col l6 m6">
 			<div class="w3-display-container voimage">
-				<img src="image1-narr.png" alt="Narration" style="width:100%;border-radius:5px">
-				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Narration</div>
-				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<img src="image1-narr.png" alt="Narration" style="width:100%;border-radius:5px" onclick="playPause(3)">
+				<div class="w3-display-topleft w3-padding lilbox" style="border-radius:5px" onclick="playPause(3)">Narration</div>
+				<div class="reelui" style="width:100%;height:10px">
 				<input type="range" min="0" max="100" value="0" class="slider" id="seekerNar">
 				</div>
 				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
-				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(3)">
-					<i id="ppbuttNar" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-				</button>
 				</div>
 			</div>
 			</div>
@@ -256,15 +256,12 @@ div.preload-images {
 			
 			<div class="w3-col l6 m6">
 			<div class="w3-display-container voimage">
-				<img src="image1-doc.png" alt="Documentary" style="width:100%;border-radius:5px">
-				<div class="w3-display-topleft w3-black w3-padding" style="border-radius:5px">Documentary</div>
-				<div class="reelui" style="width:100%;height:10px;padding:0px;padding-bottom:128px;overflow:hidden">
+				<img src="image1-doc.png" alt="Documentary" style="width:100%;border-radius:5px" onclick="playPause(4)">
+				<div class="w3-display-topleft w3-padding lilbox" style="border-radius:5px" onclick="playPause(4)">Documentary</div>
+				<div class="reelui" style="width:100%;height:10px">
 				<input type="range" min="0" max="100" value="0" class="slider" id="seekerDoc">
 				</div>
 				<div class="reelui" style="padding-bottom:6%;padding-right:3%">
-				<button class="btn" style="width:60px;height:60px;border-radius:50%" onclick="playPause(4)">
-					<i id="ppbuttDoc" class="fa fa-play fa-lg" style="color:black;display:block;vertical-align:middle;text-align:center;padding-left:2px"></i>
-				</button>
 				</div>
 			</div>
 			</div>
@@ -420,57 +417,33 @@ seekerDoc.addEventListener('input', (e) => {
 function playPause(id) {
   if (id == 1) {
 	  if (playingCom) {
-		document.getElementById("ppbuttCom").classList.remove('fa-pause');
-		document.getElementById("ppbuttCom").classList.add('fa-play');
-		document.getElementById("ppbuttCom").style.paddingLeft = "2px";
 		audioCom.pause();
 		playingCom = false;
 	  } else {
-		document.getElementById("ppbuttCom").classList.remove('fa-play');
-		document.getElementById("ppbuttCom").classList.add('fa-pause');
-		document.getElementById("ppbuttCom").style.paddingLeft = "0px";
 		audioCom.play();
 		playingCom = true;
 	  }
     } else if (id == 2) {
 	  if (playingCha) {
-		document.getElementById("ppbuttCha").classList.remove('fa-pause');
-		document.getElementById("ppbuttCha").classList.add('fa-play');
-		document.getElementById("ppbuttCha").style.paddingLeft = "2px";
 		audioCha.pause();
 		playingCha = false;
 	  } else {
-		document.getElementById("ppbuttCha").classList.remove('fa-play');
-		document.getElementById("ppbuttCha").classList.add('fa-pause');
-		document.getElementById("ppbuttCha").style.paddingLeft = "0px";
 		audioCha.play();
 		playingCha = true;
 	  }
 	} else if (id == 3) {
 	  if (playingNar) {
-		document.getElementById("ppbuttNar").classList.remove('fa-pause');
-		document.getElementById("ppbuttNar").classList.add('fa-play');
-		document.getElementById("ppbuttNar").style.paddingLeft = "2px";
 		audioNar.pause();
 		playingNar = false;
 	  } else {
-		document.getElementById("ppbuttNar").classList.remove('fa-play');
-		document.getElementById("ppbuttNar").classList.add('fa-pause');
-		document.getElementById("ppbuttNar").style.paddingLeft = "0px";
 		audioNar.play();
 		playingNar = true;
 	  }
 	} else if (id == 4) {
 	  if (playingDoc) {
-		document.getElementById("ppbuttDoc").classList.remove('fa-pause');
-		document.getElementById("ppbuttDoc").classList.add('fa-play');
-		document.getElementById("ppbuttDoc").style.paddingLeft = "2px";
 		audioDoc.pause();
 		playingDoc = false;
 	  } else {
-		document.getElementById("ppbuttDoc").classList.remove('fa-play');
-		document.getElementById("ppbuttDoc").classList.add('fa-pause');
-		document.getElementById("ppbuttDoc").style.paddingLeft = "0px";
 		audioDoc.play();
 		playingDoc = true;
 	  }
