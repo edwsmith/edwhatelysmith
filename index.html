@@ -342,7 +342,7 @@ div.preload-images {
 	  <img class="w3-hover-opacity" style="height:23px;margin-bottom:5px;margin-left:4px" src="spotlight logo.svg"></a>
 	</div>
 	
-    <p class="w3-medium">Headshots masterfully taken by the good folks over at YellowBelly Photos.<br><br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> • Design by <a href="#top"><img class="mySlides w3-animate-opacity" src="logohw.png" style="width:10%;padding-left:4px"></a></p>
+    <p class="w3-medium">Headshots masterfully taken by the good folks over at YellowBelly Photos.<br><br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> • Design by <a href="#top"><img class="mySlides w3-animate-opacity" src="logohw.png" style="width:10%;padding-left:4px;min-width:100px"></a></p>
   <!-- End footer -->
   </footer>
   
@@ -420,6 +420,14 @@ function playPause(id) {
 		audioCom.pause();
 		playingCom = false;
 	  } else {
+	    if (playingCha || playingDoc || playingNar) {
+		  audioCha.pause();
+		  audioDoc.pause();
+		  audioNar.pause();
+		  playingCha = false;
+		  playingDoc = false;
+		  playingNar = false;
+		}
 		audioCom.play();
 		playingCom = true;
 	  }
@@ -428,6 +436,14 @@ function playPause(id) {
 		audioCha.pause();
 		playingCha = false;
 	  } else {
+	    if (playingCom || playingDoc || playingNar) {
+		  audioCom.pause();
+		  audioDoc.pause();
+		  audioNar.pause();
+		  playingCom = false;
+		  playingDoc = false;
+		  playingNar = false;
+		}
 		audioCha.play();
 		playingCha = true;
 	  }
@@ -436,6 +452,14 @@ function playPause(id) {
 		audioNar.pause();
 		playingNar = false;
 	  } else {
+	    if (playingCha || playingDoc || playingCom) {
+		  audioCha.pause();
+		  audioDoc.pause();
+		  audioCom.pause();
+		  playingCha = false;
+		  playingDoc = false;
+		  playingCom = false;
+		}
 		audioNar.play();
 		playingNar = true;
 	  }
@@ -444,6 +468,14 @@ function playPause(id) {
 		audioDoc.pause();
 		playingDoc = false;
 	  } else {
+	    if (playingCha || playingCom || playingNar) {
+		  audioCha.pause();
+		  audioCom.pause();
+		  audioNar.pause();
+		  playingCha = false;
+		  playingCom = false;
+		  playingNar = false;
+		}
 		audioDoc.play();
 		playingDoc = true;
 	  }
@@ -452,7 +484,7 @@ function playPause(id) {
 
 function scrollCheck() {
 
-  if(window.scrollY<250){
+  if(window.scrollY<240){
     openBG(); //user scrolled to the top of the page
   } else {
 	closeBG();
