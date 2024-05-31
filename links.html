@@ -109,27 +109,6 @@ body {
     width: 100%;
     max-width: 600px;
 	padding: 64px 16px 32px;
-}	
-
-img {
-	border-radius:50%;
-	width: 96px;
-    height: 96px;
-    display: block;
-    filter: none;
-	margin: auto;
-	margin-bottom:16px;
-}
-
-img.icon {
-	left: 8px;
-    width: 46px;
-    height: 46px;
-	margin: 0;
-	position: relative;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 
 .butt {
@@ -154,6 +133,7 @@ img.icon {
 
 .butt.dark {
 	border: 2px solid #465051;
+	background-image:none;
 	color: #465051;
 	padding:16px 32px;
 	width: max-content !important;
@@ -165,6 +145,42 @@ img.icon {
 	background-color:#FFFFFF;
 	cursor:pointer;
 	background-image: none;
+}
+
+img {
+	border-radius:50%;
+	width: 96px;
+    height: 96px;
+    display: block;
+    filter: none;
+	margin: auto;
+	margin-bottom:16px;
+}
+
+img.icon {
+	left: 8px;
+    width: 46px;
+    height: 46px;
+	margin: 0;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#a1:hover #b1 {
+	transition: 0.6s;
+    filter:invert(60%);
+}
+
+#a2:hover #b2 {
+	transition: 0.6s;
+    filter:invert(60%);
+}
+
+#a3:hover #b3 {
+	transition: 0.6s;
+    filter:invert(60%);
 }
 
 .butt.dark:hover {
@@ -259,23 +275,23 @@ flex-container {
 <div id="links-container">
 <div>
 	<div type="CONTACT_DETAILS">
-		<button class="butt" height="auto" onclick="modaltog()">
+		<button id="a1" class="butt" height="auto" onclick="modaltog()">
 			<div class="buttwhole">
-			<div><img class="icon" src="contact.png" loading="lazy"></div><p class="butttext">Contact</p>
+			<div><img id="b1" class="icon" src="contact.png" loading="lazy"></div><p class="butttext">Contact</p>
 			</div>
 		</button>
 	</div>
 	<div>
 		<div>
-			<button class="butt">
+			<button id="a2" class="butt">
 			<a href="/" target="_blank" rel="noopener" height="auto">
 			<div class="buttwhole">
-			<div><img class="icon" src="g1.png" loading="lazy">
+			<div><img id="b2" class="icon" src="g1.png" loading="lazy">
 			</div><p class="butttext">Website</p>
 			</div></a>
 			</button>
 		</div>
-	</div><div><div></div><div><button class="butt"><a href="https://www.spotlight.com/7655-7834-4974" target="_blank" rel="noopener" height="auto"><div class="buttwhole"><div><img class="icon" src="spotlight logo.png" loading="lazy"></div><p class="butttext">Spotlight</p></div></a></div></div>
+	</div><div><div></div><div><button id="a3" class="butt"><a href="https://www.spotlight.com/7655-7834-4974" target="_blank" rel="noopener" height="auto"><div class="buttwhole"><div><img id="b3" class="icon" src="spotlight logo.png" loading="lazy"></div><p class="butttext">Spotlight</p></div></a></div></div>
 </div>
 </div>
 </div>
