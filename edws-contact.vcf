@@ -2,8 +2,8 @@ BEGIN:VCARD
 VERSION:3.0
 N:Whately-Smith;Ed;
 TITLE:Actor/Voice Actor
-EMAIL;TYPE=other:ed.whatelysmith@gmail.com
-TEL;TYPE=other:07745193885
+EMAIL;TYPE=work:ed.whatelysmith@gmail.com
+TEL;TYPE=mobile:07745193885
 ADR;:;;London;United Kingdom
-URL;TYPE=linktree:https://linktr.ee/edwsmith
+URL;TYPE=website:https://edwhatelysmith.co.uk
 END:VCARD
