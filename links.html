@@ -4,7 +4,7 @@
 <title>Contact Links</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -32,8 +32,8 @@ body {
 
 .lines {
 	background-image: linear-gradient(
-		rgba(70, 80, 81, 0.2),
-		rgba(70, 80, 81, 0.2) 6px,
+		rgba(70, 80, 81, 0.1),
+		rgba(70, 80, 81, 0.1) 6px,
 		transparent 6px,
 		transparent 16px);
 	background-size: 100% 16px;
@@ -42,10 +42,58 @@ body {
 	position:fixed;
 	z-index:-1;
 	overflow:hide;
-	animation: pan-overlay 74s infinite linear;
+	animation: pan-overlay 140s infinite linear;
 }
 
 @keyframes pan-overlay {
+	from {
+		background-position: 0% 0%;
+	}
+	
+	to {
+		background-position: 0% 100%;
+	}
+}
+
+.lines2 {
+	background-image: linear-gradient(
+		rgb(0 232 255 / 20%), rgb(0 232 255 / 20%) 16px,
+		transparent 3px,
+		transparent 24px);
+	background-size: 100% 24px;
+	height: 100vh;
+	width: 100%;
+	position:fixed;
+	z-index:-1;
+	overflow:hide;
+	animation: pan-overlay2 39s infinite linear;
+}
+
+@keyframes pan-overlay2 {
+	from {
+		background-position: 0% 0%;
+	}
+	
+	to {
+		background-position: 0% -100%;
+	}
+}
+
+.lines3 {
+	background-image: linear-gradient(
+		rgb(45 190 122 / 20%), rgb(45 190 122 / 20%) 6px,
+		transparent 3px,
+		transparent 24px);
+	background-size: 100% 24px;
+	height: 100vh;
+	width: 100%;
+	position:fixed;
+	z-index:-1;
+	overflow:hide;
+	animation: pan-overlay3 107s infinite linear;
+}
+
+@keyframes pan-overlay3 {
 	from {
 		background-position: 0% 0%;
 	}
@@ -87,8 +135,8 @@ img.icon {
 .butt {
     z-index: 0;
     overflow: hidden;
-	/* background-image: linear-gradient(rgb(70, 80, 81), rgb(137, 148, 143));
-	background-attachment:fixed; */
+	background-image: linear-gradient(rgb(70, 80, 81), rgb(137, 148, 143));
+	background-attachment:fixed;
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
     margin-bottom: 16px;
     border: 2px solid rgb(255, 255, 255);
@@ -164,7 +212,7 @@ flex-container {
 </style>
 </head>
 <body>
-<div class="gradmask"><div class="lines"></div></div>
+<div class="gradmask"><div class="lines"><!--div class="lines2"><div class="lines3"></div--></div></div>
 <!-- Modal -->
 <div id="id01" class="w3-modal">
     <div id="modal" class="w3-modal-content w3-animate-top"  style="border-radius: 25px;max-width:520px">
